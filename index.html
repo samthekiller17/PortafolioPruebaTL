@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f1e7">
+    <title>Galería de gatos meme</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #292820;
+            background: #f4f1e7;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-width: 320px;
+            margin: 0;
+            padding: 48px 20px 64px;
+        }
+
+        main {
+            width: min(100%, 1120px);
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        header p {
+            margin: 0 0 10px;
+            color: #7a6546;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
+            line-height: 1.15;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap: 20px;
+        }
+
+        figure {
+            overflow: hidden;
+            margin: 0;
+            padding: 10px;
+            border: 1px solid #e4ddcd;
+            border-radius: 14px;
+            background: #fffdf8;
+            box-shadow: 0 4px 14px rgb(58 49 32 / 7%);
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+
+        figure:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgb(58 49 32 / 12%);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            border-radius: 8px;
+            background: #eee9dc;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 12px 4px 4px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            figure {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <p>Una pequeña colección</p>
+            <h1>Galería de gatos meme</h1>
+        </header>
+
+        <section class="gallery" aria-label="Gatos meme">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQEqDTOP8emufgIMDhxL7p1pnJEy_SE9s_KrErCcL1BaZyeuwIS8S5YZU&s=10"
+                    alt="Gato riéndose">
+                <figcaption>Gato riéndose</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHf3fh4ZmCOz_dtXNVjjSERs8R40wdLb9BNOUp_NiOwW0YRffXAF6bmBOH&s=10"
+                    alt="Gato dando like">
+                <figcaption>Gato like</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3jzCLgzx0PnW0aQqNbgdyaot7a5JrpJV8cnZlwE3Z6le84bJIr9Ovk5C&s=10"
+                    alt="Gato con expresión de celos">
+                <figcaption>Gato tóxica</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9zPXxX97tCkXLe5rbiN47tCI14BStDtpTKjH1LgxYIOcGSpZmyJp-Wjb&s=10"
+                    alt="Gato fachero">
+                <figcaption>Gato fachero facherito</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVoajCroOyQ3K70zVQgl3eS0RHIcb9YJ_sHSwo7409yLPC25TUWwb_ZW7q&s=10"
+                    alt="Gato tierno">
+                <figcaption>Gato UwU</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTko9atEmshSkzBrG3yJ6yd-uqV4slo9AaDba1qaBBwQVC-_uUYkw2D7qM&s=10"
+                    alt="Gato del jueves">
+                <figcaption>Gato jueves</figcaption>
+            </figure>
+            <figure>
+                <img src="https://i.pinimg.com/236x/4e/16/00/4e16005c8d91dc69eb753993e6013299.jpg"
+                    alt="Gato sorprendido">
+                <figcaption>Gato sorprendido</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwF5yh-bCr6XqhHx8dDWcB7yzzKC_q_TobScF96adXSg&s=10"
+                    alt="Gato enojado del jueves">
+                <figcaption>Gato jueves pero enojado</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>
