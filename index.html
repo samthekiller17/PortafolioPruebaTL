@@ -86,8 +86,31 @@
             font-weight: 700;
         }
 
+        .profile-link {
+            display: inline-block;
+            margin: 8px 4px 4px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            background: #7a6546;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background-color 160ms ease;
+        }
+
+        .profile-link:hover {
+            background: #5f4d34;
+        }
+
+        .profile-link:focus-visible {
+            outline: 3px solid #292820;
+            outline-offset: 3px;
+        }
+
         @media (prefers-reduced-motion: reduce) {
-            figure {
+            figure,
+            .profile-link {
                 transition: none;
             }
         }
@@ -138,9 +161,13 @@
                 <figcaption>Gato sorprendido</figcaption>
             </figure>
             <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwF5yh-bCr6XqhHx8dDWcB7yzzKC_q_TobScF96adXSg&s=10"
-                    alt="Gato enojado del jueves">
-                <figcaption>Gato jueves pero enojado</figcaption>
+                <img src="Imagenes/WhatsApp%20Image%202026-04-24%20at%201.55.25%20PM.jpeg"
+                    alt="Retrato personal con chaqueta azul">
+                <figcaption>Mi perfil</figcaption>
+                <a class="profile-link" href="https://samthekiller17.github.io/Hojadevidaprueba/"
+                    target="_blank" rel="noopener noreferrer">
+                    Ver mi hoja de vida
+                </a>
             </figure>
         </section>
     </main>
